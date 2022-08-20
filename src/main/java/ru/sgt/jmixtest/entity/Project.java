@@ -13,8 +13,8 @@ import java.util.UUID;
 
 @JmixEntity
 @Table(name = "PROJECT", indexes = {
-        @Index(name = "IDX_PROJECT_MANAGER", columnList = "MANAGER_ID")
-})
+        @Index(name = "IDX_PROJECT_MANAGER",
+                columnList = "MANAGER_ID")})
 @Entity
 public class Project {
     @JmixGeneratedValue
